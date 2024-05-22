@@ -1,0 +1,54 @@
+.profile {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 20px;
+  height: 100%;
+  text-align: left;
+}
+form.profile-form {
+  flex: 1;
+  > h3 {
+    font-size: 26px;
+    text-align: left;
+  }
+}
+.profile .ant-form-item-control-input-content {
+  text-align: left;
+  .ant-select-selection-placeholder {
+    text-align: left;
+  }
+}
+.profile-form .ant-form-item-label {
+  min-width: 100px;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.read-item {
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.profile-btn {
+  width: 100%;
+  cursor: pointer;
+  margin-top: 20px;
+  height: 40px;
+}
+
+@media (min-width: 750px) {
+  .profile {
+    align-items: center;
+  }
+  form.profile-form {
+    flex: 1;
+    max-width: 500px;
+    border: 1px solid #eee;
+    padding: 0 20px 20px;
+    box-shadow: 0px 2px 4px 0px #0000001a;
+  }
+  .profile .ant-form-item-control-input-content {
+    text-align: right;
+  }
+}

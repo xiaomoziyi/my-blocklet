@@ -5,7 +5,6 @@ const cors = require('cors');
 const express = require('express');
 const cookieParser = require('cookie-parser');
 const fallback = require('@blocklet/sdk/lib/middlewares/fallback');
-
 const { name, version } = require('../package.json');
 const logger = require('./libs/logger');
 
@@ -19,6 +18,7 @@ app.use(cors());
 
 const router = express.Router();
 router.use('/api', require('./routes'));
+
 app.use(router);
 
 const isProduction = process.env.NODE_ENV === 'production' || process.env.ABT_NODE_SERVICE_ENV === 'production';

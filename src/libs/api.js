@@ -11,4 +11,10 @@ axios.interceptors.request.use(
   (error) => Promise.reject(error)
 );
 
+axios.interceptors.response.use((response) => {
+  if (response.status === 200) {
+    return Promise.resolve(response.data);
+  }
+  return Promise.reject(response);
+});
 export default axios;

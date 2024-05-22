@@ -5,6 +5,8 @@ body {
 }
 .app {
   text-align: center;
+  height: 100vh;
+  overflow: hidden;
 }
 
 .app-logo {
